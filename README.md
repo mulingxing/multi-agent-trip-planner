@@ -2,6 +2,10 @@
 
 这是基于 Datawhale [《Hello-Agents》第 13 章旅行助手示例](https://github.com/datawhalechina/hello-agents/tree/main/code/chapter13/helloagents-trip-planner)继续开发的学习项目，原项目作者为 Datawhale 的 Hello-Agents 贡献者。这里保留了原示例的 FastAPI、Vue 和高德 MCP 基础，增加了餐饮 Agent、行程结构校验、景点 POI 详情核验及相应的离线回归测试，并调整了前端展示与错误处理。原项目与本仓库均按 **CC BY-NC-SA 4.0** 分享，详见 [LICENSE](LICENSE) 和[来源与许可](#来源与许可)。
 
+![智能旅行助手首页](docs/images/home.png)
+
+上图为本仓库前端的本地运行界面；生成行程需要配置自己的模型和地图服务。
+
 ## 能做什么
 
 - 用户填写目的地、日期、天数及偏好后，由景点、天气、酒店、餐饮四个检索 Agent 收集信息，再交给行程规划 Agent 生成多日计划。
